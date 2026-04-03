@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad III: Construcción del Formulario</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <h1>Registro de Estudiante</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        
+        <fieldset>
+            <legend>Datos del estudiante</legend>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido">
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha" name="fecha">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Otros datos</legend>
+            <div class="form-group">
+                <label for="color">Color favorito:</label>
+                <input type="color" id="color" name="color_id">
+            </div>
+            <div class="form-group">
+                <label for="interes">Del uno al cien, cuanto te gusta la programación web?</label>
+                <input type="range" id="interes" name="interes" min="1" max="100" value="50">
+            </div>
+            <div class="form-group">
+                <label for="foto">Foto de tipo carnet:</label>
+                <input type="file" id="foto" name="foto_carnet" accept=".jpg">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>¿Cuánto sabes de programación?</legend>
+            <div class="form-group">
+                <p>Nivel Actual:</p>
+                <div class="opciones">
+                    <input type="radio" id="basico" name="nivel" value="basico">
+                    <label for="basico" class="label-inline">Poco</label>
+                    
+                    <input type="radio" id="intermedio" name="nivel" value="intermedio">
+                    <label for="intermedio" class="label-inline">Mas o menos</label>
+                    
+                    <input type="radio" id="avanzado" name="nivel" value="avanzado">
+                    <label for="avanzado" class="label-inline">Bastante</label>
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <p>Lenguajes que conoces:</p>
+                <div class="opciones">
+                    <input type="checkbox" id="html" name="lenguaje" value="HTML">
+                    <label for="html" class="label-inline">HTML</label>
+                    
+                    <input type="checkbox" id="css" name="lenguaje" value="CSS">
+                    <label for="css" class="label-inline">CSS</label>
+                    
+                    <input type="checkbox" id="js" name="lenguaje" value="JS">
+                    <label for="js" class="label-inline">JS</label>
+                    
+                    <input type="checkbox" id="sql" name="lenguaje" value="SQL">
+                    <label for="sql" class="label-inline">SQL</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="botones-contenedor">
+            <input type="submit" value="Enviar" class="btn-enviar">
+            <input type="reset" value="Reiniciar" class="btn-reiniciar">
+        </div>
+
+    </form>
+
+</body>
+</html>
